@@ -9,6 +9,7 @@ private:
 
 public:
 	CTrainer(std::string name, std::string vorname, unsigned int alter);
+	CTrainer() = default;
 
 	void setLizenzStufe(unsigned int argLizenzStufe);
 

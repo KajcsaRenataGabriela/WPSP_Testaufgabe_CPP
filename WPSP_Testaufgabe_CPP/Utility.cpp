@@ -228,7 +228,8 @@ int main()
 
 	//CFuehrung* fuehrung1 = new CFuehrung("Lala", "La", 50, CFuehrung::e_aufgabe(1));
 
-	CTrainer* trainer1 = new CTrainer("Trainer", "Trainee", 35);
+	//CTrainer* trainer1 = new CTrainer("Trainer", "Trainee", 35);
+	CTrainer* tr = new CTrainer();
 
 	//barcaFeldSpieler1->setBallBeherrschung(2);
 
