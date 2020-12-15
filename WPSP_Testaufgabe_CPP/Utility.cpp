@@ -91,58 +91,58 @@ void addFieldPlayer(CKader& kader) {
 	}
 	else
 	{
-		//cout << "Edit penalty room restraint. Choose a number! " << endl;
-		//unsigned int strafRaumBeherrschungChoice;
-		//cin >> strafRaumBeherrschungChoice;
+		cout << "Edit penalty room restraint. Choose a number! " << endl;
+		unsigned int strafRaumBeherrschungChoice;
+		cin >> strafRaumBeherrschungChoice;
 
-		//cout << "Edit lines quality. Choose a number! " << endl;
-		//unsigned int linienQualitaetChoice;
-		//cin >> linienQualitaetChoice;
+		cout << "Edit lines quality. Choose a number! " << endl;
+		unsigned int linienQualitaetChoice;
+		cin >> linienQualitaetChoice;
 
-		//cout << "Edit defense communication. Choose a number! " << endl;
-		//unsigned int abwehrKommunikationChoice;
-		//cin >> abwehrKommunikationChoice;
+		cout << "Edit defense communication. Choose a number! " << endl;
+		unsigned int abwehrKommunikationChoice;
+		cin >> abwehrKommunikationChoice;
 
-		//CTorwart* newPlayer = new CTorwart(name, vorname, alter, CSpieler::e_position(0), numberChoice);
+		CTorwart* newPlayer = new CTorwart(name, vorname, alter, CSpieler::e_position(0), numberChoice);
 
-		//newPlayer->setAbwehrKommunikation(abwehrKommunikationChoice);
-		//newPlayer->setLinienQualitaet(linienQualitaetChoice);
-		//newPlayer->setStrafRaumBeherrschung(strafRaumBeherrschungChoice);
+		newPlayer->setAbwehrKommunikation(abwehrKommunikationChoice);
+		newPlayer->setLinienQualitaet(linienQualitaetChoice);
+		newPlayer->setStrafRaumBeherrschung(strafRaumBeherrschungChoice);
 		
-		//kader.add(*newPlayer);
+		kader.add(*newPlayer);
 
-		//cout << "New goalkeeper added" << endl << endl;
+		cout << "New goalkeeper added" << endl << endl;
 	}
 }
 
-//void addTrainer(CKader& kader) {
-//	cout << "Type his first name!" << endl;
-//	string name;
-//	cin >> name;
-//
-//	cout << "Type his last name!" << endl;
-//	string vorname;
-//	cin >> vorname;
-//
-//	cout << "Type his age!" << endl;
-//	unsigned int alter;
-//	cin >> alter;
-//	while (alter < 0) {
-//		cout << "Give a realistic age!";
-//		cin >> alter;
-//	}
-//
-//	cout << "Edit defense. Choose a number! " << endl;
-//	unsigned int lizenzStufeChoice;
-//	cin >> lizenzStufeChoice;
-//
-//	CTrainer* newTrainer = new CTrainer(name, vorname, alter);
-//	newTrainer->setLizenzStufe(lizenzStufeChoice);
-//
-//	kader.add(*newTrainer);
-//
-//  cout << "New trainer added" << endl << endl;
-//}
+void addTrainer(CKader& kader) {
+	cout << "Type his first name!" << endl;
+	string name;
+	cin >> name;
+
+	cout << "Type his last name!" << endl;
+	string vorname;
+	cin >> vorname;
+
+	cout << "Type his age!" << endl;
+	unsigned int alter;
+	cin >> alter;
+	while (alter < 0) {
+		cout << "Give a realistic age!";
+		cin >> alter;
+	}
+
+	cout << "Edit defense. Choose a number! " << endl;
+	unsigned int lizenzStufeChoice;
+	cin >> lizenzStufeChoice;
+
+	CTrainer* newTrainer = new CTrainer(name, vorname, alter);
+	newTrainer->setLizenzStufe(lizenzStufeChoice);
+
+	kader.add(*newTrainer);
+
+  cout << "New trainer added" << endl << endl;
+}
 
 void addFuehrung(CKader& kader) {
 	cout << "Type his first name!" << endl;
@@ -208,7 +208,7 @@ int main()
 			addFieldPlayer(kader);
 			break;
 		case 2:
-			//addTrainer(kader);
+			addTrainer(kader);
 			break;
 		case 3:
 			addFuehrung(kader);
@@ -229,7 +229,7 @@ int main()
 	//CFuehrung* fuehrung1 = new CFuehrung("Lala", "La", 50, CFuehrung::e_aufgabe(1));
 
 	//CTrainer* trainer1 = new CTrainer("Trainer", "Trainee", 35);
-	CTrainer* tr = new CTrainer();
+	//CTrainer* tr = new CTrainer();
 
 	//barcaFeldSpieler1->setBallBeherrschung(2);
 
